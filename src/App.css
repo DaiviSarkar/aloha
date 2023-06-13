@@ -2,37 +2,550 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+.home-background{
+
+position: absolute;
+width: 100%;
+height: 560px;
+left: 0px;
+top: 0px;
+background: url(Image/Image\ \(2\).png);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Top-Bar{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items:center;
+padding: 0px 20px;
+gap: 20px;
+position: absolute;
+width: 80%;
+height: 12%;
+left: 10%;
+top: 24px;
+
+
+/* White */
+
+background: #FFFFFF;
+border-radius: 12px;
+}
+
+.brand{
+color:#001A1A;
+font-family: 'Bilbo', cursive;
+font-size: 2.8rem;
+font-weight: 900;
+margin-top: 4.5%;
+margin-right: 20%;
+
+}
+
+.nav-item{
+  
+
+font-family: 'IBM Plex Mono';
+font-weight: 100;
+padding: 8% 7%;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+
+/* Dark */
+
+color: #001A1A;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.book{
+  background-color: #008080;
+  color:#FFFFFF;
+  font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+width: 128px;
+height: 40px;
+
+}
+
+.title{
+position: absolute;
+width: 55%;
+height: 50%;
+left: 25%;
+top: 156px;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 800%;
+line-height: 122px;
+/* or 94% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 6.44%, #FFFFFF 95.08%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 600px) {
+  .title{
+    font-size: 500%;
+    line-height: 80px;
+    position: absolute;
+width: 90%;
+height: 50%;
+left: 7%;
+top: 176px;
+  }
+  .Top-Bar{
+    top:0;
+    position: absolute;
+width: 100%;
+height: 12%;
+left:0;
+border-radius: 0%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.Adv-head{
+position: absolute;
+width: 96px;
+height: 20px;
+left: 115px;
+top: 600px;
+
+/* Body - Bold */
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+
+/* Dark */
+
+color: #001A1A;
+}
+
+.new{
+position: absolute;
+width: 1136px;
+height: 384px;
+left: 115px;
+top: 600px;
+margin-bottom: 100%;
+}
+
+.news-grid{
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-gap: 10px;
+  justify-content: left;
+  justify-items: left;
+  max-width: 900px;
+position: absolute;
+width: 368px;
+height: 340px;
+left: 115px;
+top: 644px;
+border-radius: 30px;
+}
+
+/* White */
+.article{
+background: #FFFFFF;
+box-shadow: 0px 0px 16px rgba(0, 128, 128, 0.16);
+
+
+
+}
+
+.article-image{
+width: 363px;
+height: 170px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.article-title{
+width: 300px;
+height: 10px;
+margin-top: 5%;
+margin-left: 5%;
+
+/* Header */
+text-align: left;
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 20px;
+/* identical to box height, or 83% */
+
+
+/* Green */
+
+color: #008080;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.article-description{
+width: 318px;
+height: 40px;
+margin-top: 8%;
+margin-left: 5%;
+
+
+/* Body */
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 100;
+font-size: 16px;
+line-height: 20px;
+text-align: left;
+/* or 125% */
+
+
+/* Dark */
+
+color: #001A1A;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.fa-circle-arrow-right{
+ color: #c5d6d8;
+}
+
+.f-back{
+  position: relative;
+  left:40%;
+  top:6%;
+  border-radius: 100%;
+  background-color: #008080;
+}
+
+.C-background{
+position: absolute;
+width: 100%;
+height: 100%;
+left: -1px;
+top: 170%;
+
+/* Light */
+
+background: #E6F2F2;
+}
+.cata-title-1{
+  position: absolute;
+width: 106px;
+height: 20px;
+margin-left: 8%;
+margin-top: 60px;
+
+/* Body - Bold */
+text-align: left;
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+
+/* Dark */
+
+color: #001A1A;
+}
+
+.cata-title-2{
+  position: absolute;
+  width: 40%;
+  height: 20px;
+  margin-left: 50px;
+margin-top: 60px;
+
+/* Body - Bold */
+text-align: left;
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+
+/* Dark */
+
+color: #001A1A;
+}
+.namePlate{
+position: absolute;
+width: 500px;
+height: 176px;
+margin-left: 50px;
+margin-top: 105px;
+align-items: left;
+/* White */
+text-align: left;
+background: #FFFFFF;
+border-radius: 8px;
+}
+
+.name{
+  position: absolute;
+width: 188px;
+height: 20px;
+left:20px;
+top:20px;
+
+
+/* Header */
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 20px;
+/* identical to box height, or 83% */
+
+
+/* Dark */
+
+color: #001A1A;
+}
+.since{
+position: absolute;
+width: 154px;
+height: 20px;
+left: 20px;
+top: 50px;
+
+/* Body */
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 100;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+
+/* Dark */
+
+color: #001A1A;
+}
+.contact{
+position: absolute;
+width: 80px;
+height: 40px;
+top: 120px;
+left:20px;
+
+/* Label -- Bold -- L */
+text-align: center;
+font-family: 'Greycliff CF';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+
+
+
+/* Green */
+
+color: #008080;
+border:solid #008080;
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+@media screen and (max-width: 600px){
+  .cata-box-1{
+    height:90px;
+  }
+  
+  .cata-title-2{
+    margin-top: 30px;
+    margin-left: 35px;
+  }
+.namePlate{
+  width: 400px;
+  margin-top: 70px;
+  margin-left: 35px;
+
+}
+
+.p-pic{
+  margin-top: 100px;
+  margin-left:280px;
+}
+.C-background{
+height:1000px;
+}
+}
+
+.footer{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
 
-.App-link {
-  color: #61dafb;
-}
+position: absolute;
+width: 100%;
+height: 80px;
+left: 0px;
+top: 260%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Dark */
+
+background: #001A1A;
+}
+@media screen and (max-width: 900px){
+  .footer{
+    margin-top:95%;
   }
-  to {
-    transform: rotate(360deg);
+}
+.f-name{
+  color:#FFFFFF;
+font-family: 'Bilbo', cursive;
+font-size: 2.8rem;
+font-weight: 900;
+margin-top: 1%;
+margin-left: -85%;
+}
+
+.fa-arrow-right{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 430px;
+  top:5px;
+  
+  
+  /* Green */
+  
+  color: #008080;
+}
+.grid-cat{
+  margin-top: 14%;
+  margin-left: 8%;
+}
+.cat-op{
+
+margin-left: 8%;
+margin-top: 2%;
+
+padding: 24px;
+
+
+width: 500px;
+height: 68px;
+
+/* White */
+
+background: #FFFFFF;
+border-radius: 8px;
+color:#001A1A;
+
+
+
+}
+.op-name{
+position: absolute;
+width: 120px;
+height: 20px;
+
+/* Body */
+text-align: left;
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+
+/* Dark */
+
+color: #001A1A;
+
+}
+@media screen and (max-width: 600px){
+  .grid-cat{
+    margin-top: 20%;
+    margin-left: 1%;
+  }
+  .cat-op{
+    width:400px;
+  }
+  .fa-arrow-right{
+    margin-left: -120px;
+  }
+}
+.title-box{
+  border: solid 1px;
+  line-height: 40px;
+  position: relative;
+  left: 450px;
+  top:-120px;
+  margin-bottom: 1px;
+ border-radius: 5px;
+  background-color: white;
+  z-index: +1;
+  font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color:#008080;
+}
+@media screen and (max-width: 600px){
+  .title-box{
+  position: relative;
+  left:-10px;
+  top:40px;
   }
 }
